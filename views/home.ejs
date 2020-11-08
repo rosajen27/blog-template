@@ -9,6 +9,7 @@
 <div>
     <h1><%= blogPosts[i].title; %></h1>
     <p><%= blogPosts[i].body.substring(0,100) + "..."; %></p>
+    <a href="/posts/<%=blogPosts[i].title%>">Read More</a>
 </div>
 <% } %>
 
