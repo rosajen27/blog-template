@@ -1,6 +1,6 @@
 # Blog Template
 
-Utilized EJS to create a template & layout for your next blog website!
+Utilized EJS to create a template & layout for your next blog website! User may customize the content and compose blog posts.
 
 
 ## Table of Contents
