@@ -3,6 +3,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+var _ = require('lodash');
 
 let blogPosts = [];
 
@@ -14,29 +15,29 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.get("/", function(req, res) {
-  res.render("home", {homeParagraph: homeStartingContent, blogPosts: blogPosts});
+app.get("/", function (req, res) {
+  res.render("home", { homeParagraph: homeStartingContent, blogPosts: blogPosts });
 });
 
-app.get("/about", function(req, res) {
-  res.render("about", {aboutParagraph: aboutContent});
+app.get("/about", function (req, res) {
+  res.render("about", { aboutParagraph: aboutContent });
 });
 
-app.get("/contact", function(req, res) {
-  res.render("contact", {contactParagraph: contactContent});
+app.get("/contact", function (req, res) {
+  res.render("contact", { contactParagraph: contactContent });
 });
 
-app.get("/compose", function(req, res) {
+app.get("/compose", function (req, res) {
   res.render("compose");
 });
 
 app.post("/compose", function (req, res) {
 
   const blogPost = {
-    title : req.body.entryTitle,
+    title: req.body.entryTitle,
     body: req.body.entryBody
   };
 
@@ -46,6 +47,24 @@ app.post("/compose", function (req, res) {
 
 });
 
-app.listen(3000, function() {
+app.get("/posts/:postName", function (req, res) {
+
+  const requestedTitle = _.kebabCase(req.params.postName);
+
+  blogPosts.forEach(function (blogPost) {
+
+    const storedTitle = _.kebabCase(blogPost.title);
+
+    if (storedTitle === requestedTitle) {
+      res.render("post", {
+        title: blogPost.title,
+        body: blogPost.body
+      });
+    }
+
+  });
+});
+
+app.listen(3000, function () {
   console.log("Server started on port 3000");
 });
