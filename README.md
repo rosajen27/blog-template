@@ -14,6 +14,7 @@ Utilized EJS to create a template & layout for your next blog website! User may 
 ## Deployment
 
 Deployed Website: https://rosa-blog-template.herokuapp.com/
+
 To compose a blog post : https://rosa-blog-template.herokuapp.com/compose/
 
 ![demo.png](./public/imgs/demo.png)
