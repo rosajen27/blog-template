@@ -18,8 +18,9 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-// Connect to a new database called blogDB
-mongoose.connect("mongodb://localhost:27017/blogDB", { useNewUrlParser: true });
+// Connect to a new database
+mongoose.connect("mongodb+srv://<username>:<password>@cluster0.e0jml.mongodb.net/<database-name>?retryWrites=true&w=majority", { useNewUrlParser: true });
+
 
 // Create a new postSchema that contains a title and content
 const postSchema = {

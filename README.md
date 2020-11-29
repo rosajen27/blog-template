@@ -17,7 +17,11 @@ Deployed Website: https://rosa-blog-template.herokuapp.com/
 
 To compose a blog post : https://rosa-blog-template.herokuapp.com/compose/
 
+![demo.png](./public/imgs/demo1.png)
+
 ![demo.png](./public/imgs/demo.png)
+
+![demo.png](./public/imgs/demo2.png)
 
 ## Built With
 
@@ -27,6 +31,8 @@ To compose a blog post : https://rosa-blog-template.herokuapp.com/compose/
 * EJS
 * Express
 * Node
+* MongoDB Atlas
+* Mongoose
 
 ## Authors
 
