@@ -1,6 +1,6 @@
-# Blog Template
+# 📝 Daily Journal
 
-A blog template where the user may fork and customize the content to compose blog posts.
+A daily journal (blog template) where the user may fork and customize the content to compose blog posts.
 
 
 ## Table of Contents
@@ -13,15 +13,14 @@ A blog template where the user may fork and customize the content to compose blo
 
 ## Deployment
 
-Deployed Website: https://rosa-blog-template.herokuapp.com/
-
-To compose a blog post : https://rosa-blog-template.herokuapp.com/compose/
+Demo: https://rosa-blog-template.herokuapp.com/
 
 ![demo.png](./public/imgs/demo1.png)
 
 ![demo.png](./public/imgs/demo.png)
 
 ![demo.png](./public/imgs/demo2.png)
+
 
 ## Built With
 
@@ -31,6 +30,8 @@ To compose a blog post : https://rosa-blog-template.herokuapp.com/compose/
 * EJS
 * Node.js + Express
 * MongoDB Atlas + Mongoose
+* Heroku
+
 
 ## Authors
 
