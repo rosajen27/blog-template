@@ -1,6 +1,6 @@
 # 📝 Daily Journal
 
-A daily journal (blog template) where the user may fork and customize the content to compose blog posts.
+A daily journal (blog template) where the user may fork and customize the content to compose and publish blog posts.
 
 
 ## Table of Contents
@@ -15,9 +15,9 @@ A daily journal (blog template) where the user may fork and customize the conten
 
 Demo: https://rosa-blog-template.herokuapp.com/
 
-![demo.png](./public/imgs/demo1.png)
-
 ![demo.png](./public/imgs/demo.png)
+
+![demo.png](./public/imgs/demo1.png)
 
 ![demo.png](./public/imgs/demo2.png)
 
