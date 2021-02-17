@@ -29,10 +29,8 @@ To compose a blog post : https://rosa-blog-template.herokuapp.com/compose/
 * CSS
 * JavaScript
 * EJS
-* Express
-* Node
-* MongoDB Atlas
-* Mongoose
+* Node.js + Express
+* MongoDB Atlas + Mongoose
 
 ## Authors
 
@@ -46,7 +44,7 @@ To compose a blog post : https://rosa-blog-template.herokuapp.com/compose/
 
 This project is licensed under the MIT License.
 
-Copyright (c) 2020 Jennifer Rosa
+Copyright (c) 2021 Jennifer Rosa
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
